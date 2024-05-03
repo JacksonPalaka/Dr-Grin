@@ -62,18 +62,17 @@ window.addEventListener("scroll", function () {
 
 // video
 
-function playVideo() {
-  var video = document.getElementById('video');
-  video.style.display = 'block';
-  video.play();
-}
+// function playVideo() {
+//   var video = document.getElementById('video');
+//   video.style.display = 'block';
+//   video.play();
+// }
 
-function stopVideo() {
-  var video = document.getElementById('video');
-  // video.style.display = 'none';
-  video.pause();
-  video.currentTime = 0;
-}
+// function stopVideo() {
+//   var video = document.getElementById('video');
+//   video.pause();
+//   video.currentTime = 0;
+// }
 
 
 
