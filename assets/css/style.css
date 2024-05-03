@@ -1413,22 +1413,57 @@ input[type="submit"]:hover {
   display: none;
 }
 
+/* certificates */
+.certificates{
+  display: flex;
+  justify-content: space-around;
+}
+.certificates img{
+  width: 300px;
+}
+
+/* certificates */
 
 
-/* another video */
+
+/* service video */
+
+
+.All-services {
+  align-items: center;
+  display: flex;
+  justify-content: space-around ;
+}
+
+.services1 {
+  /* margin: 20px; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px ;
+}
 
 .video-card {
-  width: 300px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
-  overflow: hidden; /* Hide overflowing video */
   position: relative;
+  width: 200px;
+  height: auto;
+}
+
+.video-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .video-card video {
-  width: 100%;
-  height: auto;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   left: 0;
-  display: none; /* Hide video initially */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* hide initially */
 }
+
