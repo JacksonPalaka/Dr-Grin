@@ -91,3 +91,27 @@ function stopVideo(videoId) {
   video.currentTime = 0;
   video.style.display = 'none'; // Hide the video when not playing
 }
+
+
+// chat on whatsapp
+
+function sendWhatsAppMessage() {
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var problem = document.getElementById('problem').value;
+
+  var message = "Name: " + name + "\nPhone Number: " + phone + "\nProblem: " + problem;
+  var whatsappLink = "https://wa.me/918249156389?text=" + encodeURIComponent(message);
+
+  window.open(whatsappLink);
+
+  // Prevent form submission
+  return false;
+}
+
+// make call
+
+function makeCall() {
+  var phoneNumber = '9692166127';
+  window.location.href = 'tel:' + phoneNumber;
+}

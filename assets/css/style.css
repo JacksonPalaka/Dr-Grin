@@ -1300,7 +1300,7 @@ nav ul li a{
 }
 
 .container-map{
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   padding:40px 20px;
   background-color: #fff;
@@ -1349,47 +1349,6 @@ iframe{
 
 
 
- .container-contact {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container-contact h2 {
-  margin-top: 0;
-  color: #333;
-  font-size: 50px;
-  padding-bottom:10px ;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
 
 .services1 {
   display: flex;
@@ -1419,7 +1378,7 @@ input[type="submit"]:hover {
   justify-content: space-around;
 }
 .certificates img{
-  width: 300px;
+  width: 250px;
 }
 
 /* certificates */
@@ -1436,7 +1395,6 @@ input[type="submit"]:hover {
 }
 
 .services1 {
-  /* margin: 20px; */
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -1445,11 +1403,12 @@ input[type="submit"]:hover {
 
 .video-card {
   position: relative;
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
 .video-card img {
+  object-fit: fill;
   border-radius: 10px;
   width: 100%;
   height: auto;
@@ -1467,3 +1426,80 @@ input[type="submit"]:hover {
   display: none; /* hide initially */
 }
 
+
+.services1 h2{
+  color: Black;
+  font-size: 20px;
+  font-weight: 100;
+}
+.chatBtn{
+  display: flex ;
+  column-gap: 20px;
+}
+.chat-btn{
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* contact */
+
+.container-contact {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .container-contact h2 {
+            text-align: center;
+        }
+
+        .container-contact form {
+            display: grid;
+           /* gap: 10px; */
+        }
+
+        .container-contact label {
+            font-weight: bold;
+        }
+
+        .container-contact input[type="text"],
+        .container-contact input[type="tel"],
+        .container-contact textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .container-contact input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container-contact input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .container-contact input[type="submit"]:focus {
+            outline: none;
+        }
+
+        .container-contact textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+
+        @media only screen and (min-width: 575px) {
+          
+
+          
+      }
