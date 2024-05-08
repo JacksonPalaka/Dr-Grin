@@ -1231,7 +1231,7 @@ nav{
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px 8%;
+  padding: 0px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1243,7 +1243,7 @@ nav .logo{
 nav ul li{
   list-style: none;
   display: inline-block;
-  margin-left:40px;
+  margin-left:20px;
 }
 
 nav ul li a{
@@ -1376,9 +1376,10 @@ iframe{
 .certificates{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .certificates img{
-  width: 250px;
+  width: 20vw;
 }
 
 /* certificates */
@@ -1403,7 +1404,7 @@ iframe{
 
 .video-card {
   position: relative;
-  width: 300px;
+  width: 80%;
   height: auto;
 }
 
@@ -1430,7 +1431,7 @@ iframe{
 .services1 h2{
   color: Black;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: bold;
 }
 .chatBtn{
   display: flex ;
@@ -1502,4 +1503,13 @@ iframe{
           
 
           
+      }
+
+
+
+      @media screen and (max-width: 768px) {
+
+        .drgrin{
+          font-size: 20px;
+        }
       }
