@@ -62,35 +62,6 @@ window.addEventListener("scroll", function () {
 
 // video
 
-// function playVideo() {
-//   var video = document.getElementById('video');
-//   video.style.display = 'block';
-//   video.play();
-// }
-
-// function stopVideo() {
-//   var video = document.getElementById('video');
-//   video.pause();
-//   video.currentTime = 0;
-// }
-
-
-
-// another video 
-
-
-function playVideo(videoId) {
-  var video = document.getElementById(videoId);
-  video.style.display = 'block';
-  video.play();
-}
-
-function stopVideo(videoId) {
-  var video = document.getElementById(videoId);
-  video.pause();
-  video.currentTime = 0;
-  video.style.display = 'none'; // Hide the video when not playing
-}
 
 
 // chat on whatsapp

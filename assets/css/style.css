@@ -1252,6 +1252,24 @@ nav ul li a{
   font-size: 17px;
 }
 
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 4%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .logo {
+    width: 150px; /* Adjust logo size */
+  }
+
+  .contents {
+    text-align: center;
+  }
+}
 .contents{
   text-align: center;
 }
@@ -1273,12 +1291,13 @@ nav ul li a{
   margin-top: 20px;
 }
 
-.back-video{
-  min-width: 100%;
-  min-height: 100%;
+.back-video {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  right: 0;
-  bottom:0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -1424,7 +1443,7 @@ iframe{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none; /* hide initially */
+ 
 }
 
 
