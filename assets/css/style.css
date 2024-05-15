@@ -376,6 +376,8 @@ body {
 .service-list {
   display: grid;
   gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-card {
@@ -883,6 +885,7 @@ margin-bottom: 150px;}
   .service-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    justify-content: center;
   }
 
 
@@ -1316,6 +1319,7 @@ nav ul li a{
   top: 0;
   left: 0;
   display: none;
+  text-align: center;
 }
 
 .container-map{
@@ -1371,6 +1375,7 @@ iframe{
 
 .services1 {
   display: flex;
+  align-items: center;
 }
 
 
@@ -1445,7 +1450,6 @@ iframe{
   object-fit: cover;
  
 }
-
 
 .services1 h2{
   color: Black;
