@@ -41,6 +41,8 @@ function makeCall() {
   window.location.href = 'tel:' + phoneNumber;
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const targets = document.querySelectorAll('.services1');
 
