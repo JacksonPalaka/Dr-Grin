@@ -41,3 +41,38 @@ function makeCall() {
   window.location.href = 'tel:' + phoneNumber;
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const targets = document.querySelectorAll('.services1');
+
+  function checkPosition() {
+      targets.forEach(target => {
+          const rect = target.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          const viewportWidth = window.innerWidth;
+          const middleOfViewportY = viewportHeight / 2;
+          const middleOfViewportX = viewportWidth / 2;
+          const middleOfElementY = rect.top + (rect.height / 2);
+          const middleOfElementX = rect.left + (rect.width / 2);
+
+          if (Math.abs(middleOfElementY - middleOfViewportY) < rect.height / 2 &&
+              Math.abs(middleOfElementX - middleOfViewportX) < rect.width / 2) {
+              const video = target.querySelector('video');
+              if (video && video.paused) {
+                  video.currentTime = 0;
+                  video.play();
+              }
+          } else {
+              const video = target.querySelector('video');
+              if (video && !video.paused) {
+                  video.pause();
+              }
+          }
+      });
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', checkPosition); // Also check position on resize
+
+  // Initial check
+  checkPosition();
+});
