@@ -72,7 +72,7 @@ function sendWhatsAppMessage() {
   var problem = document.getElementById('problem').value;
 
   var message = "Name: " + name + "\nPhone Number: " + phone + "\nProblem: " + problem;
-  var whatsappLink = "https://wa.me/918249156389?text=" + encodeURIComponent(message);
+  var whatsappLink = "https://wa.me/919403890078?text=" + encodeURIComponent(message);
 
   window.open(whatsappLink);
 
@@ -83,6 +83,30 @@ function sendWhatsAppMessage() {
 // make call
 
 function makeCall() {
-  var phoneNumber = '9692166127';
+  var phoneNumber = '9403890078';
   window.location.href = 'tel:' + phoneNumber;
 }
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const videoElement = document.querySelector('.video1');
+  const screenHeight = window.innerHeight;
+
+  window.addEventListener('scroll', function() {
+      const videoRect = videoElement.getBoundingClientRect();
+      const videoTop = videoRect.top;
+      const videoBottom = videoRect.bottom;
+
+      if (videoTop < screenHeight / 2 && videoBottom > screenHeight / 2) {
+          videoElement.play().catch(error => {
+              console.error('Video play error:', error);
+          });
+      } else {
+          videoElement.pause();
+          videoElement.currentTime = 0; // Reset to start when out of view
+      }
+  });
+});
