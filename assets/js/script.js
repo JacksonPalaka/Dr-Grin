@@ -40,3 +40,4 @@ function makeCall() {
   var phoneNumber = '9403890078';
   window.location.href = 'tel:' + phoneNumber;
 }
+
